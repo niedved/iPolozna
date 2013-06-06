@@ -73,6 +73,7 @@
 - (void)takePhoto{
     [cameraPicker takePicture];
 }
+
 - (void)imagePickerController:(UIImagePickerController *)picker
  didFinishPickingMediaWithInfo:(NSDictionary *)info{
     // imporatant: we don't save the photo in the camera roll after taking it
@@ -80,7 +81,7 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard"
                                                              bundle: nil];
     BFResultsNavigationController *controller = (BFResultsNavigationController*)[mainStoryboard
-                                                       instantiateViewControllerWithIdentifier: @"resultsNavigationController"];
+                                                       instantiateViewControllerWithIdentifier: @"audioViewController"];
     //[cameraPicker push:controller animated:YES];
     [cameraPicker dismissModalViewControllerAnimated:YES];
     [self.navigationController pushViewController:controller animated:YES];
