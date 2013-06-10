@@ -30,7 +30,7 @@
     reseting = NO;
     playingSample = NO;
     recordTime = 0.0f;
-    recordMaxTime = 20.0f;
+    recordMaxTime = 15.0f;
         // Disable Stop/Play button when application launches
         [stopButton setEnabled:NO];
         [playButton setEnabled:NO];

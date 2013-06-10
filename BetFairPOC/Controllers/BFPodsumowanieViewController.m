@@ -4,7 +4,7 @@
 //  Copyright (c) 2012 ARFixer. All rights reserved.
 //
 
-#import "BFPodsumowanieViewController"
+#import "BFPodsumowanieViewController.h"
 #import "BFResultsNavigationController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <AudioToolbox/AudioServices.h>
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation BFAudioViewController
+@implementation BFPodsumowanieViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
